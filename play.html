@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/play.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>PlayRoom</title>
+</head>
+
+<body>
+    <!-- container -->
+    <!-- navbar starts -->
+    <div class="main">
+        <div class="topna">
+            <a class="active" onclick="glow()" href="index.html">Home</a>
+            <a href="contact.html">Contact</a>
+            <a href="play.html">PlayRoom</a>
+            <a href="about.html">About</a>
+            <!-- <button class="btn btn-success" style="padding: 4px;" onclick="glow()">E.B.C</button> -->
+            <!-- <a href="#" style="background-color: rgb(96, 102, 83)" onclick="glow()">Excellent B.Classes</a> -->
+        </div>
+
+        <!-- content -->
+
+        <!-- Shayaris -->
+        <div class="trans">
+            <h1 style="color:rgb(56, 230, 13);font-weight: bolder;">Shayari Playlist</h1>
+            <div class="col-md-12">
+                <iframe width="560" height="315" src="https://youtube.com/embed/uUMLEH0Upag
+            " frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe><iframe width="560" height="315"
+                    src="https://www.youtube.com/embed/iVJggmwGVeQ" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe><iframe width="560" height="315"
+                    src="https://www.youtube.com/embed/xSUJag-DMLs" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe><iframe width="560" height="315"
+                    src="https://www.youtube.com/embed/oxZWZAUAcrw" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/8QTS5j2JxPI" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe><iframe width="560" height="315"
+                    src="https://www.youtube.com/embed/zQCpnkTDhk0" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/tuvgmzbFcGw" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/t7ElPIG3f4o" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe><iframe width="560" height="315"
+                    src="https://www.youtube.com/embed/R68PPqkYOKw" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe><iframe width="560" height="315"
+                    src="https://www.youtube.com/embed/MHcE97ZU6uk" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+            <h3 style="font-weight: bolder;padding:2%; color:rgb(87, 241, 15);font-size: x-larger; ">
+                For More Videos Go
+                <a style="border:3px solid saddlebrown; padding: 1%; background-image: linear-gradient(brown,yellow, pink);"
+                    href="https://www.youtube.com/channel/UCyvPaoMCWEn-gCqyfqFcvZw ">Here</a>
+            </h3>
+        </div>
+        
+            <script>
+
+                var xhr = new XMLHttpRequest();
+                xhr.open("GET", "img/stor/", true);
+                xhr.responseType = 'document';
+                xhr.onload = () => {
+                    if (xhr.status === 200) {
+                        var elements = xhr.response.getElementsByTagName("a");
+                        for (x of elements) {
+                            if (x.href.match(/\.(jpe?g|png|gif)$/)) {
+                                let img = document.createElement("img");
+                                img.src = x.href;
+                                var a = document.body.appendChild(img);
+                                a.width="320";
+                                a.align = "center";
+                                a.style.height = "auto";
+                                a.style.margin = "20";
+                                // var x = document.getElementsByClassName("str");
+                                // x.body.appendChild(img);
+                            }
+                        };
+                    }
+
+                }
+                xhr.send()
+            </script>
+        </div>
+    </div>
+    <div class="footer">
+        <h2 style="font-weight: bolder;">Go To</h2>
+        <a class="io" href="index.html">Home</a>
+
+        <a class="io" href="contact.html">Contact Us</a>
+        <a class="io" href="about.html">About</a>
+        <a class="io" href="play.html">PlayRoom</a><br>
+        <h3 style="margin:auto; padding: 2%;">Follow us On</h3>
+        <ul>
+            <li>
+                <a href="https://www.facebook.com/mukesh.bhagat.3979489" class="fa fa-facebook"></a>
+                <a href="https://www.youtube.com/results?search_query=mukesh+muztar"
+                    style="background-image: linear-gradient(rgb(255, 39, 39)); color:white;" class="fa fa-youtube"></a>
+                <a href="https://www.instagram.com/anonymous_coder_hacker/"
+                    style="background-image: linear-gradient(rgb(56, 53, 216),rgb(138, 0, 131),rgb(245, 44, 44)); "
+                    class="fa fa-instagram"></a>
+            </li>
+        </ul>
+
+
+    </div>
+
+    </div>
+    <div class="stories">
+        <h1>Our loving Moments</h1>
+        <div class="str">
+
+        </div>
+        </div>
+
+
+    <!-- Ending Container -->
+
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+
+    <script src="js/main.js "></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js "
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj "
+        crossorigin="anonymous "></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js "
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx "
+        crossorigin="anonymous "></script>
+
+
+</body>
+
+</html>
